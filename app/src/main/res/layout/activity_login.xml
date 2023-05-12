@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="148dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/log_in"
-        android:textColor="@color/purple"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
+        android:text="Login"
+        android:textColor="@color/orange"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,14 +34,18 @@
             android:id="@+id/login_activity_username_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
             android:text="@string/user_name"
-            android:textColor="@color/purple" />
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            tools:ignore="TextSizeCheck" />
         <EditText
             android:id="@+id/login_activity_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:layout_marginTop="10dp"
             android:hint="@string/user_name"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
@@ -50,28 +54,24 @@
             android:id="@+id/login_activity_password_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
             android:text="@string/password"
-            android:textColor="@color/purple" />
+            android:textColor="@color/orange"
+            android:textSize="25dp"
+            tools:ignore="TextSizeCheck" />
 
         <EditText
             android:id="@+id/login_activity_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:minHeight="48dp" />
 
-        <Button
-            android:id="@+id/login_activity_register_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:backgroundTint="#5CFFFFFF"
-            android:text="@string/register"
-            android:textColor="#000000" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,12 +83,23 @@
                 android:id="@+id/login_activity_btn_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
                 android:layout_weight="1"
-                android:backgroundTint="@color/purple"
-                android:text="@string/log_in" />
+                android:backgroundTint="@color/orange"
+                android:text="Log In"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
+        <Button
+            android:id="@+id/login_activity_register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Not a User? Register Here"
+            android:textColor="#000000" />
 
     </LinearLayout>
 
